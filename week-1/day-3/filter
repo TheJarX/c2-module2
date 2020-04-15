@@ -1,0 +1,5 @@
+def filter(arr)
+  res = []
+  arr.length.times {|i| res << arr[i] if yield(arr[i])}
+  return res
+end
